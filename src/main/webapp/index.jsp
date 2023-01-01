@@ -1,13 +1,24 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Login</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<form action="${pageContext.request.contextPath}/login" method="post">
+    <label for="login">Login:
+        <input type="text" name="login" id="login" required>
+    </label><br>
+    <label for="password">Password:
+        <input type="password" name="password" id="password" required>
+    </label><br>
+    <button type="submit">Login</button>
+    <c:if test="${param.error != null}">
+        <div style="color: red">
+            <span>Login or password is not correct</span>
+        </div>
+    </c:if>
+</form>
 </body>
 </html>
