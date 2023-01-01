@@ -1,6 +1,6 @@
 package com.example.simpleauth.service;
 
-import com.example.simpleauth.InMemoryUserRepository;
+import com.example.simpleauth.repo.InMemoryUserRepository;
 import com.example.simpleauth.dto.UserDto;
 
 import java.util.List;

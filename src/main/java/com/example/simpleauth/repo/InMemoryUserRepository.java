@@ -1,4 +1,4 @@
-package com.example.simpleauth;
+package com.example.simpleauth.repo;
 
 import com.example.simpleauth.entity.User;
 
