@@ -1,12 +1,8 @@
 package com.example.simpleauth.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.Value;
 
-@Builder
-@Data
-@AllArgsConstructor
+@Value
 public final class UserDto {
 
 	private final String login;
